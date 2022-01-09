@@ -1,3 +1,19 @@
+use clap::Parser;
+
+#[derive(Parser, Debug)]
+#[clap(about, version, author)]
+struct Args {
+    #[clap(short, long)]
+    name: String,
+
+    #[clap(short, long, default_value_t = 1)]
+    count: u8,
+}
+
 fn main() {
-    println!("Hello, world!");
+    let args = Args::parse();
+
+    for _ in 0..args.count {
+        println!("Hello {}!", args.name)
+    }
 }
