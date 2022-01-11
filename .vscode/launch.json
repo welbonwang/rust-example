@@ -46,6 +46,24 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "exam-struct",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=exam-struct",
+                    "--package=exam-struct"
+                ],
+                "filter": {
+                    "name": "exam-struct",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "Debug unit tests in executable 'cli'",
             "cargo": {
                 "args": [
