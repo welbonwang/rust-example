@@ -34,8 +34,10 @@ impl Health for Monster {
 }
 
 fn main() {
-    // let plant = Box::new(Plant);
-    // let monster = Box::new(Monster { health: 100f32 });
+    let plant = Box::new(Plant);
+    plant.actor();
+    let monster = Box::new(Monster { health: 100f32 });
+    monster.actor();
     if impls!(Plant: Actor) {
         println!("Plant is a type of Actor");
     } else {
