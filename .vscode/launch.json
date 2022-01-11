@@ -7,15 +7,15 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "cli",
+            "name": "exam-cli",
             "cargo": {
                 "args": [
                     "build",
-                    "--bin=cli",
-                    "--package=cli"
+                    "--bin=exam-cli",
+                    "--package=exam-cli"
                 ],
                 "filter": {
-                    "name": "cli",
+                    "name": "exam-cli",
                     "kind": "bin"
                 }
             },
@@ -64,16 +64,16 @@
         {
             "type": "lldb",
             "request": "launch",
-            "name": "Debug unit tests in executable 'cli'",
+            "name": "Debug unit tests in executable 'exam-cli'",
             "cargo": {
                 "args": [
                     "test",
                     "--no-run",
-                    "--bin=cli",
-                    "--package=cli"
+                    "--bin=exam-cli",
+                    "--package=exam-cli"
                 ],
                 "filter": {
-                    "name": "cli",
+                    "name": "exam-cli",
                     "kind": "bin"
                 }
             },

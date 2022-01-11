@@ -2,5 +2,5 @@
 
 rust-example is created for learning rust.
 
-# cli
-demo how to parse cli args
+# exam-cli
+demo how to parse exam-cli args
