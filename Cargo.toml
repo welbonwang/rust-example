@@ -3,4 +3,5 @@ members = [
     "exam-cli",
     "exam-struct",
     "exam-trait",
+    "exam-conv",
 ]
