@@ -38,6 +38,7 @@ fn main() {
     plant.actor();
     let monster = Box::new(Monster { health: 100f32 });
     monster.actor();
+    monster.health();
     if impls!(Plant: Actor) {
         println!("Plant is a type of Actor");
     } else {
