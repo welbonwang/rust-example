@@ -1,7 +1,11 @@
 [workspace]
 members = [
+    "exam-list",
     "exam-cli",
     "exam-struct",
     "exam-trait",
     "exam-conv",
+    "exam-mpsc",
+    "exam-ownership",
+    "exam-addr",
 ]

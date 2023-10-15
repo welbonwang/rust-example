@@ -28,6 +28,24 @@
         {
             "type": "lldb",
             "request": "launch",
+            "name": "exam-draft",
+            "cargo": {
+                "args": [
+                    "build",
+                    "--bin=exam-draft",
+                    "--package=exam-draft"
+                ],
+                "filter": {
+                    "name": "exam-draft",
+                    "kind": "bin"
+                }
+            },
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "type": "lldb",
+            "request": "launch",
             "name": "exam-trait",
             "cargo": {
                 "args": [
